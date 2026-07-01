@@ -7,14 +7,15 @@ export const profile = {
     "The Edward S. Rogers Sr. Department of Electrical and Computer Engineering",
     "University of Toronto",
   ],
-  shortTitle: "PhD Candidate, University of Toronto ECE",
+  shortTitle:
+    "PhD Candidate, The Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto",
   institution: "University of Toronto",
   location: "Toronto, Canada",
   email: "jiading.light.zhu@gmail.com",
   image: "/assets/jiading.jpg",
   imageAlt: "Portrait of Jiading Zhu",
   description:
-    "LLM-based motivational interviewing and digital health research at the University of Toronto.",
+    "LLM harnesses for motivational-interviewing-based behavioural counselling and digital health research at the University of Toronto.",
   summary:
     "I create harnesses around large language models for motivational-interviewing-based behavioural counselling, usually in the context of smoking cessation. My work combines response generation, MI adherence evaluation, personalization, and safety-oriented assessment for digital health systems.",
   researchSummary:
@@ -53,7 +54,7 @@ export const education = [
     institution: "University of Toronto",
     location: "Toronto, Canada",
     degree:
-      "Doctor of Philosophy, The Edward S. Rogers Sr. Department of Electrical & Computer Engineering",
+      "Doctor of Philosophy, The Edward S. Rogers Sr. Department of Electrical and Computer Engineering",
     date: "Sep 2022 - Present",
     bullets: [
       "Supervised by Prof. Jonathan Rose.",
@@ -210,7 +211,7 @@ export const publications = [
       "Zafar Mahmood, Soliman Ali, Jiading Zhu, Mohamed Abdelwahab, Max Y. Collins, Simon Chen, Yicheng C. Zhao, Jodi Wolff, Osnat Melamed, Nadia Minian, Marta Maslej, Carolynne Cooper, Matt Ratto, Peter Selby, and Jonathan Rose",
     venue: "Findings of the Association for Computational Linguistics: ACL 2025",
     summary:
-      "Presents a fully generative motivational-interviewing counsellor chatbot designed to help smokers move toward deciding to quit.",
+      "Presents an LLM-based motivational-interviewing counselling system for helping smokers move toward deciding to quit.",
     year: "2025",
     citations: "14",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -224,7 +225,7 @@ export const publications = [
       "Jiading Zhu, Alec Dong, Cindy Wang, Scott Veldhuizen, Mohamed Abdelwahab, Andrew Brown, Peter Selby, and collaborators",
     venue: "JMIR Formative Research 9(1), e56973",
     summary:
-      "Studies how exposure to ChatGPT changed user interactions with a motivational-interviewing chatbot in a quasi-experimental digital-health setting.",
+      "Studies how exposure to ChatGPT changed user expectations and interactions with a motivational-interviewing chatbot in a smoking-cessation setting.",
     year: "2025",
     citations: "3",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -238,7 +239,7 @@ export const publications = [
       "Soliman Ali, Jiading Zhu, Alex Guo, Xiao Nan Ye, Qilin Gu, Jodi Wolff, Carolynne Cooper, Osnat C. Melamed, Peter Selby, and Jonathan Rose",
     venue: "NLP-AI4Health, pages 25-54",
     summary:
-      "Validates automated coding methods for counsellor and client behaviours in motivational-interviewing transcripts, supporting scalable analysis of counselling interactions.",
+      "Validates LLM-based coding methods for counsellor and client behaviours in motivational-interviewing transcripts, supporting scalable MI evaluation.",
     year: "2025",
     citations: "2",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -301,7 +302,7 @@ export const skills = [
 
 export const researchHighlights = [
   {
-    title: "LLM-based MI counselling systems",
+    title: "LLM harnesses for MI counselling",
     body: "Building system scaffolding around LLMs for motivational-interviewing-based behavioural counselling, usually in smoking cessation.",
   },
   {
