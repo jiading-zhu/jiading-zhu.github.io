@@ -17,7 +17,7 @@ export const profile = {
   description:
     "LLM harnesses for motivational-interviewing-based behavioral counselling and digital health research at the University of Toronto.",
   summary:
-    "I create harnesses around large language models for motivational-interviewing-based behavioral counselling, usually in the context of smoking cessation. My work combines response generation, MI adherence evaluation, personalization, and safety-oriented assessment for digital health systems.",
+    "I create harnesses around large language models for motivational-interviewing-based behavioral counselling, usually in the context of smoking cessation.",
   researchSummary:
     "My current research develops the system scaffolding around LLMs so they can conduct motivational-interviewing-style behavioral counselling more reliably. In the smoking cessation setting, this includes prompt and conversation design, MI fidelity evaluation, personalization, fairness checks, and real-world study design with CAMH collaborators.",
   about:
@@ -59,7 +59,7 @@ export const education = [
     bullets: [
       "Supervised by Prof. Jonathan Rose.",
       "Developing LLM-based systems and evaluation harnesses for motivational-interviewing-based behavioral counselling in collaboration with CAMH.",
-      "Research topics include controlled generation, MI adherence evaluation, conversational systems, personalization, fairness, and digital health.",
+      "Research topics include LLM-based conversational systems and their evaluations, digital health, automated behavioral counselling, harness engineering, agentic design, knowledge distillation, and AI safety.",
     ],
   },
   {
