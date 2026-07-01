@@ -15,11 +15,11 @@ export const profile = {
   image: "/assets/jiading.jpg",
   imageAlt: "Portrait of Jiading Zhu",
   description:
-    "LLM harnesses for motivational-interviewing-based behavioural counselling and digital health research at the University of Toronto.",
+    "LLM harnesses for motivational-interviewing-based behavioral counselling and digital health research at the University of Toronto.",
   summary:
-    "I create harnesses around large language models for motivational-interviewing-based behavioural counselling, usually in the context of smoking cessation. My work combines response generation, MI adherence evaluation, personalization, and safety-oriented assessment for digital health systems.",
+    "I create harnesses around large language models for motivational-interviewing-based behavioral counselling, usually in the context of smoking cessation. My work combines response generation, MI adherence evaluation, personalization, and safety-oriented assessment for digital health systems.",
   researchSummary:
-    "My current research develops the system scaffolding around LLMs so they can conduct motivational-interviewing-style behavioural counselling more reliably. In the smoking cessation setting, this includes prompt and conversation design, MI fidelity evaluation, personalization, fairness checks, and real-world study design with CAMH collaborators.",
+    "My current research develops the system scaffolding around LLMs so they can conduct motivational-interviewing-style behavioral counselling more reliably. In the smoking cessation setting, this includes prompt and conversation design, MI fidelity evaluation, personalization, fairness checks, and real-world study design with CAMH collaborators.",
   about:
     "I am interested in building AI systems that are technically rigorous and useful in real human contexts. Before my PhD, I worked on machine learning systems and benchmarking software, with experience spanning LLM agent workflows, computer vision, NLP, C++ inference implementations, and reinforcement learning research.",
   links: [
@@ -42,7 +42,7 @@ export const profile = {
   interests: [
     "Large Language Models",
     "Motivational Interviewing",
-    "Behavioural Counselling",
+    "Behavioral Counselling",
     "MI Adherence Evaluation",
     "Digital Health",
     "Smoking Cessation",
@@ -58,7 +58,7 @@ export const education = [
     date: "Sep 2022 - Present",
     bullets: [
       "Supervised by Prof. Jonathan Rose.",
-      "Developing LLM-based systems and evaluation harnesses for motivational-interviewing-based behavioural counselling in collaboration with CAMH.",
+      "Developing LLM-based systems and evaluation harnesses for motivational-interviewing-based behavioral counselling in collaboration with CAMH.",
       "Research topics include controlled generation, MI adherence evaluation, conversational systems, personalization, fairness, and digital health.",
     ],
   },
@@ -128,7 +128,7 @@ export const experience = [
     ],
   },
   {
-    organization: "Rambus Inc.",
+    organization: "Rambus",
     role: "Software Engineering Intern, Digital Design Team",
     date: "May 2018 - May 2019",
     location: "Toronto, Canada",
@@ -140,13 +140,13 @@ export const experience = [
     ],
   },
   {
-    organization: "Connected Vehicles and Smart Transportation",
+    organization: "Connected Vehicles and Smart Transportation (CVST)",
     role: "Full Stack Developer Intern",
     date: "May 2016 - Aug 2016",
     location: "Greater Toronto Area, Canada",
     type: "Internship",
     bullets: [
-      "Worked with the CVST research team on cloud-based infrastructure for vehicle and transportation data.",
+      "Worked with the CVST research team under Prof. Alberto Leon-Garcia and Dr. Ali Tizghadam on cloud-based infrastructure for vehicle and transportation data.",
       "Acquired and analyzed real-time data from multiple APIs for a customer-facing web product.",
       "Processed data-entry requirements and implemented front-end queries and historical trend visualizations.",
     ],
@@ -155,7 +155,8 @@ export const experience = [
 
 export const researchExperience = [
   {
-    organization: "University of Toronto, Intelligent Adaptive Interventions Lab",
+    organization:
+      "University of Toronto, Intelligent Adaptive Interventions (IAI) Lab",
     role: "Research Assistant",
     date: "Sep 2019 - May 2020",
     bullets: [
@@ -165,10 +166,11 @@ export const researchExperience = [
     ],
   },
   {
-    organization: "Technical University of Darmstadt, Parallel Programming Team",
+    organization: "Technische Universitat Darmstadt, Parallel Programming Team",
     role: "Research Assistant",
     date: "May 2019 - Aug 2019",
     bullets: [
+      "Worked with the Parallel Programming Team under Prof. Felix Wolf.",
       "Modelled EfficientNet performance with respect to network depth, width, and image resolution.",
       "Adapted EfficientNet variants for datasets including Tiny ImageNet and CIFAR-100.",
       "Integrated modelling work with Extra-P performance-modelling software.",
@@ -239,7 +241,7 @@ export const publications = [
       "Soliman Ali, Jiading Zhu, Alex Guo, Xiao Nan Ye, Qilin Gu, Jodi Wolff, Carolynne Cooper, Osnat C. Melamed, Peter Selby, and Jonathan Rose",
     venue: "NLP-AI4Health, pages 25-54",
     summary:
-      "Validates LLM-based coding methods for counsellor and client behaviours in motivational-interviewing transcripts, supporting scalable MI evaluation.",
+      "Validates LLM-based coding methods for counsellor and client behaviors in motivational-interviewing transcripts, supporting scalable MI evaluation.",
     year: "2025",
     citations: "2",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -303,11 +305,11 @@ export const skills = [
 export const researchHighlights = [
   {
     title: "LLM harnesses for MI counselling",
-    body: "Building system scaffolding around LLMs for motivational-interviewing-based behavioural counselling, usually in smoking cessation.",
+    body: "Building system scaffolding around LLMs for motivational-interviewing-based behavioral counselling, usually in smoking cessation.",
   },
   {
     title: "MI adherence and evaluation",
-    body: "Adapting motivational interviewing coding and transcript analysis to measure whether generated counselling behaviour follows MI principles.",
+    body: "Adapting motivational interviewing coding and transcript analysis to measure whether generated counselling behavior follows MI principles.",
   },
   {
     title: "Personalization, fairness, and deployment",
