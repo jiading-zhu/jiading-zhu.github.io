@@ -80,10 +80,10 @@ export const experience = [
     organization: "CAMH",
     role: "Clinical Observer",
     date: "Jun 2026 - Present",
-    location: "Toronto, Canada",
+    location: "Toronto, Ontario, Canada",
     type: "Clinical research exposure",
     bullets: [
-      "Observe real-world motivational interviewing sessions for smoking cessation conducted by expert clinicians at the Nicotine Dependence Clinic.",
+      "Observe real-world motivational interviewing sessions for smoking cessation conducted by expert clinicians at the Nicotine Dependence Clinic at CAMH.",
       "Connect clinical counselling practice with the design and evaluation of LLM-based motivational-interviewing systems.",
     ],
   },
@@ -91,7 +91,7 @@ export const experience = [
     organization: "IBM",
     role: "Research Scientist - AI-powered Automation",
     date: "May 2024 - Aug 2024",
-    location: "Yorktown Heights, New York",
+    location: "Yorktown Heights, New York, United States",
     type: "Internship",
     bullets: [
       "Worked with the AI Assistant for Business Operations team on LLM-based agentic workflows.",
@@ -105,7 +105,7 @@ export const experience = [
     role: "Machine Learning Software Developer",
     date: "Mar 2021 - Jun 2022",
     location: "Toronto, Canada",
-    type: "Full-time",
+    type: "Permanent full-time",
     bullets: [
       "Developed machine learning workloads for Geekbench and Geekbench ML.",
       "Integrated computer vision and NLP models using C++ and Python, including MobileNet, RetinaFace, and BERT.",
@@ -118,7 +118,7 @@ export const experience = [
     organization: "North York General Hospital",
     role: "Machine Learning Engineer, Surge Prediction",
     date: "Sep 2019 - Jan 2020",
-    location: "Toronto, Canada",
+    location: "Toronto, Ontario, Canada",
     type: "Co-op",
     bullets: [
       "Analyzed encoded historical patient-level data to predict emergency department readmission and surge patterns.",
@@ -131,8 +131,8 @@ export const experience = [
     organization: "Rambus",
     role: "Software Engineering Intern, Digital Design Team",
     date: "May 2018 - May 2019",
-    location: "Toronto, Canada",
-    type: "Internship",
+    location: "Toronto, Ontario, Canada",
+    type: "Co-op",
     bullets: [
       "Designed and tested workflow management solutions for file-generation procedures.",
       "Worked across requirements, analysis, design, estimation, and testing using Python, Perl, TCL, Bash, and GNU Make.",
@@ -163,10 +163,11 @@ export const researchExperience = [
       "Completed undergraduate thesis work with Prof. Joseph Jay Williams.",
       "Investigated habituation effects in reinforcement learning with linear contextual multi-armed bandit models and Thompson sampling.",
       "Studied the problem in the context of DIAMANTE, a digital-health intervention for patients with co-morbid diabetes and depression.",
+      "Arranged and automated simulation runs under different true-model and hypothetical-model assumptions.",
     ],
   },
   {
-    organization: "Technische Universitat Darmstadt, Parallel Programming Team",
+    organization: "Technische Universität Darmstadt, Parallel Programming Team",
     role: "Research Assistant",
     date: "May 2019 - Aug 2019",
     bullets: [
@@ -186,6 +187,7 @@ export const researchExperience = [
       "Worked under Prof. Chi-Ghun Lee on dynamic pricing for condominium units.",
       "Formulated the pricing problem as a Markov Decision Process and built an interactive market environment in Python.",
       "Implemented Deep Q-learning variants with TensorFlow and action-space heuristics.",
+      "Experimented with heuristics that logarithmically reduced the action space.",
       "Trained agents achieved 10% higher total revenue than historical sales.",
     ],
   },
