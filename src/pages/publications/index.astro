@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import AuthorList from "../../components/AuthorList.astro";
 import { publications } from "../../data/site";
 ---
 
@@ -34,7 +35,10 @@ import { publications } from "../../data/site";
                   </a>
                 </h2>
               </div>
-              <p class="publication-authors">{publication.authors}</p>
+              <p class="publication-authors">
+                <AuthorList authors={publication.authors} />
+              </p>
+              <p class="publication-summary">{publication.summary}</p>
               <div class="publication-footer">
                 {publication.tags.map((tag) => <span class="mini-tag">{tag}</span>)}
                 {publication.citations && <span class="mini-tag">Cited by {publication.citations}</span>}
@@ -46,4 +50,3 @@ import { publications } from "../../data/site";
     </div>
   </section>
 </BaseLayout>
-

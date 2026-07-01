@@ -40,7 +40,6 @@ const navItems = [
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Jiading Zhu home">
-          <span class="brand-mark">JZ</span>
           <span class="brand-text">Jiading Zhu</span>
         </a>
         <nav class="nav" aria-label="Main navigation">
@@ -153,24 +152,13 @@ const navItems = [
   .brand {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
     color: var(--ink);
     font-weight: 700;
     text-decoration: none;
   }
 
-  .brand-mark {
-    display: grid;
-    width: 40px;
-    height: 40px;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--ink);
-    color: #fff;
-    font-size: 0.86rem;
-  }
-
   .brand-text {
+    font-size: 1.02rem;
     white-space: nowrap;
   }
 
@@ -183,18 +171,19 @@ const navItems = [
   }
 
   .nav-link {
-    border-radius: 999px;
     color: var(--muted);
     font-size: 0.94rem;
     font-weight: 650;
-    padding: 8px 13px;
+    padding: 6px 2px;
     text-decoration: none;
   }
 
   .nav-link:hover,
   .nav-link.is-active {
-    background: #e9f5f3;
     color: var(--accent-strong);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.45em;
   }
 
   main {
@@ -274,12 +263,12 @@ const navItems = [
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
+    min-height: 40px;
     border: 1px solid var(--line);
-    border-radius: 999px;
+    border-radius: 6px;
     color: var(--ink);
-    font-weight: 750;
-    padding: 9px 17px;
+    font-weight: 700;
+    padding: 8px 14px;
     text-decoration: none;
   }
 
@@ -300,11 +289,7 @@ const navItems = [
   }
 
   .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
-    gap: 56px;
-    align-items: center;
-    padding: 76px 0 72px;
+    padding: 66px 0 68px;
   }
 
   .hero-copy {
@@ -313,26 +298,28 @@ const navItems = [
 
   .hero-title-meta {
     color: var(--blue);
-    font-size: 1.02rem;
+    font-size: 1.06rem;
     font-weight: 760;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
   }
 
-  .portrait-frame {
-    justify-self: end;
-    width: min(100%, 280px);
+  .hero-identity {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 26px;
   }
 
   .portrait {
-    width: 100%;
+    width: 112px;
     aspect-ratio: 1 / 1;
     border: 1px solid var(--line);
-    border-radius: 28px;
+    border-radius: 50%;
     box-shadow: var(--shadow);
+    flex: 0 0 auto;
     object-fit: cover;
   }
 
-  .profile-list,
   .tag-list {
     display: flex;
     flex-wrap: wrap;
@@ -342,21 +329,61 @@ const navItems = [
     list-style: none;
   }
 
-  .tag,
-  .profile-link {
-    border: 1px solid var(--line);
+  .tag {
+    border: 1px solid #b7d8d3;
     border-radius: 999px;
-    background: #fff;
+    background: #eef8f6;
+    color: var(--accent-strong);
+    font-size: 0.83rem;
+    font-weight: 760;
+    padding: 5px 10px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     color: var(--ink);
-    font-size: 0.92rem;
+    font-size: 0.96rem;
     font-weight: 700;
-    padding: 7px 12px;
     text-decoration: none;
   }
 
-  .profile-link:hover {
-    border-color: var(--accent);
+  .contact-link:hover {
     color: var(--accent-strong);
+  }
+
+  .contact-icon {
+    display: inline-grid;
+    width: 26px;
+    height: 26px;
+    place-items: center;
+    border-radius: 50%;
+    background: #eef3f3;
+    color: var(--accent-strong);
+  }
+
+  .contact-icon svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+  }
+
+  .contact-icon path[fill] {
+    stroke: none;
   }
 
   .grid {
@@ -411,6 +438,19 @@ const navItems = [
     font-size: 0.95rem;
   }
 
+  .author-self {
+    border-radius: 4px;
+    background: #fff3cf;
+    color: #6d4d00;
+    font-weight: 800;
+    padding: 0 3px;
+  }
+
+  .publication-summary {
+    color: var(--ink);
+    font-size: 0.98rem;
+  }
+
   .publication-footer {
     display: flex;
     flex-wrap: wrap;
@@ -419,7 +459,7 @@ const navItems = [
   }
 
   .mini-tag {
-    border-radius: 999px;
+    border-radius: 4px;
     background: #eef6f4;
     color: var(--accent-strong);
     font-size: 0.78rem;
@@ -513,15 +553,17 @@ const navItems = [
     }
 
     .hero {
-      grid-template-columns: 1fr;
-      gap: 30px;
       padding: 44px 0 56px;
     }
 
-    .portrait-frame {
-      order: -1;
-      justify-self: start;
-      width: 220px;
+    .hero-identity {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .portrait {
+      width: 92px;
     }
 
     h1 {
@@ -580,4 +622,3 @@ const navItems = [
     }
   }
 </style>
-

@@ -16,22 +16,23 @@ export const profile = {
     "My current work develops and evaluates AI counsellor chatbots that can support smoking cessation using motivational interviewing principles. The work connects language-model generation, clinically grounded interaction design, and collaboration with health researchers and clinicians.",
   about:
     "I am interested in building AI systems that are technically rigorous and useful in real human contexts. Before my PhD, I worked on machine learning systems and benchmarking software, with experience spanning LLM agent workflows, computer vision, NLP, C++ inference implementations, and reinforcement learning research.",
+  researchProjectUrl:
+    "https://www.eecg.utoronto.ca/~jayar/chatbot-for-smoking-cessation.html",
   links: [
     {
       label: "Email",
       href: "mailto:jiading.light.zhu@gmail.com",
+      icon: "email",
     },
     {
       label: "Google Scholar",
       href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
+      icon: "scholar",
     },
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/jiading-zhu/",
-    },
-    {
-      label: "Research Project",
-      href: "https://www.eecg.utoronto.ca/~jayar/chatbot-for-smoking-cessation.html",
+      icon: "linkedin",
     },
   ],
   interests: [
@@ -152,6 +153,8 @@ export const publications = [
     authors:
       "Mohamed Abdelwahab, Michelle Yu Collins, Sihan Chen, Yi Cheng Zhao, Zafarullah Mahmood, Jiading Zhu, Soliman Ali, and Jonathan Rose",
     venue: "arXiv preprint arXiv:2605.28823",
+    summary:
+      "Introduces a framework for delineating, probing, and tracking internal concepts in large language models, with the goal of making model reasoning more inspectable.",
     year: "2026",
     citations: "",
     href: "https://arxiv.org/abs/2605.28823",
@@ -164,6 +167,8 @@ export const publications = [
     authors:
       "Zafar Mahmood, Soliman Ali, Jiading Zhu, Mohamed Abdelwahab, Max Y. Collins, Simon Chen, Yicheng C. Zhao, Jodi Wolff, Osnat Melamed, Nadia Minian, Marta Maslej, Carolynne Cooper, Matt Ratto, Peter Selby, and Jonathan Rose",
     venue: "Findings of the Association for Computational Linguistics: ACL 2025",
+    summary:
+      "Presents a fully generative motivational-interviewing counsellor chatbot designed to help smokers move toward deciding to quit.",
     year: "2025",
     citations: "14",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -176,6 +181,8 @@ export const publications = [
     authors:
       "Jiading Zhu, Alec Dong, Cindy Wang, Scott Veldhuizen, Mohamed Abdelwahab, Andrew Brown, Peter Selby, and collaborators",
     venue: "JMIR Formative Research 9(1), e56973",
+    summary:
+      "Studies how exposure to ChatGPT changed user interactions with a motivational-interviewing chatbot in a quasi-experimental digital-health setting.",
     year: "2025",
     citations: "3",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -188,6 +195,8 @@ export const publications = [
     authors:
       "Soliman Ali, Jiading Zhu, Alex Guo, Xiao Nan Ye, Qilin Gu, Jodi Wolff, Carolynne Cooper, Osnat C. Melamed, Peter Selby, and Jonathan Rose",
     venue: "NLP-AI4Health, pages 25-54",
+    summary:
+      "Validates automated coding methods for counsellor and client behaviours in motivational-interviewing transcripts, supporting scalable analysis of counselling interactions.",
     year: "2025",
     citations: "2",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
@@ -199,6 +208,8 @@ export const publications = [
       "RAG-Verus: Repository-Level Program Verification with LLMs using Retrieval Augmented Generation",
     authors: "Sicheng Zhong, Jiading Zhu, Yifang Tian, and Xujie Si",
     venue: "arXiv preprint arXiv:2502.05344",
+    summary:
+      "Uses retrieval-augmented generation to support repository-level program verification with LLMs.",
     year: "2025",
     citations: "5",
     href: "https://arxiv.org/abs/2502.05344",
@@ -212,6 +223,8 @@ export const publications = [
       "Andrew Brown, Jiading Zhu, Mohamed Abdelwahab, Alec Dong, Cindy Wang, and Jonathan Rose",
     venue:
       "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics",
+    summary:
+      "Generates, distills, and evaluates motivational-interviewing-style reflections from a foundation model.",
     year: "2024",
     citations: "10",
     href: "https://arxiv.org/abs/2402.01051",
