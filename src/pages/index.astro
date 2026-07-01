@@ -22,10 +22,7 @@ const selectedExperience = experience.slice(0, 3);
           <p class="hero-title-meta">{profile.shortTitle}</p>
         </div>
       </div>
-      <p class="lede">
-        {profile.summary}
-        <a class="inline-learn-more" href={profile.researchProjectUrl} rel="noreferrer" target="_blank">Learn more</a>
-      </p>
+      <p class="lede">{profile.summary}</p>
       <ul class="tag-list" aria-label="Research interests">
         {profile.interests.map((interest) => <li class="tag">{interest}</li>)}
       </ul>

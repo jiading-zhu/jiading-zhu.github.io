@@ -16,8 +16,6 @@ export const profile = {
     "My current work develops and evaluates AI counsellor chatbots that can support smoking cessation using motivational interviewing principles. The work connects language-model generation, clinically grounded interaction design, and collaboration with health researchers and clinicians.",
   about:
     "I am interested in building AI systems that are technically rigorous and useful in real human contexts. Before my PhD, I worked on machine learning systems and benchmarking software, with experience spanning LLM agent workflows, computer vision, NLP, C++ inference implementations, and reinforcement learning research.",
-  researchProjectUrl:
-    "https://www.eecg.utoronto.ca/~jayar/chatbot-for-smoking-cessation.html",
   links: [
     {
       label: "Email",
