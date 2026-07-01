@@ -12,14 +12,16 @@ import {
 
 <BaseLayout
   title="CV | Jiading Zhu"
-  description="Web CV for Jiading Zhu, PhD student in Electrical and Computer Engineering at the University of Toronto."
+  description="Web CV for Jiading Zhu, PhD Candidate in Electrical and Computer Engineering at the University of Toronto."
 >
   <section class="container cv-header">
     <img class="avatar" src={profile.image} alt={profile.imageAlt} width="500" height="500" />
     <div>
       <p class="eyebrow">Curriculum vitae</p>
       <h1>{profile.name}</h1>
-      <p class="lede">{profile.title}</p>
+      <p class="title-lines">
+        {profile.titleLines.map((line) => <span>{line}</span>)}
+      </p>
       <ul class="contact-list" aria-label="Contact and profile links">
         {
           profile.links.slice(0, 3).map((link) => (

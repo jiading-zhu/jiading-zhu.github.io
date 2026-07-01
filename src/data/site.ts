@@ -1,19 +1,24 @@
 export const profile = {
   name: "Jiading Zhu",
   title:
-    "PhD Student, Electrical & Computer Engineering, University of Toronto",
-  shortTitle: "PhD Student in ECE at the University of Toronto",
+    "PhD Candidate, The Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto",
+  titleLines: [
+    "PhD Candidate",
+    "The Edward S. Rogers Sr. Department of Electrical and Computer Engineering",
+    "University of Toronto",
+  ],
+  shortTitle: "PhD Candidate, University of Toronto ECE",
   institution: "University of Toronto",
   location: "Toronto, Canada",
   email: "jiading.light.zhu@gmail.com",
   image: "/assets/jiading.jpg",
   imageAlt: "Portrait of Jiading Zhu",
   description:
-    "Generative AI, conversational agents, and digital health research at the University of Toronto.",
+    "LLM-based motivational interviewing and digital health research at the University of Toronto.",
   summary:
-    "I work on generative AI systems for high-stakes conversational settings, with a focus on motivational-interviewing chatbots for smoking cessation. My research sits at the intersection of controlled generation, conversational agents, alignment, prompt engineering, and digital health.",
+    "I create harnesses around large language models for motivational-interviewing-based behavioural counselling, usually in the context of smoking cessation. My work combines response generation, MI adherence evaluation, personalization, and safety-oriented assessment for digital health systems.",
   researchSummary:
-    "My current work develops and evaluates AI counsellor chatbots that can support smoking cessation using motivational interviewing principles. The work connects language-model generation, clinically grounded interaction design, and collaboration with health researchers and clinicians.",
+    "My current research develops the system scaffolding around LLMs so they can conduct motivational-interviewing-style behavioural counselling more reliably. In the smoking cessation setting, this includes prompt and conversation design, MI fidelity evaluation, personalization, fairness checks, and real-world study design with CAMH collaborators.",
   about:
     "I am interested in building AI systems that are technically rigorous and useful in real human contexts. Before my PhD, I worked on machine learning systems and benchmarking software, with experience spanning LLM agent workflows, computer vision, NLP, C++ inference implementations, and reinforcement learning research.",
   links: [
@@ -34,12 +39,12 @@ export const profile = {
     },
   ],
   interests: [
-    "Generative AI",
-    "Conversational Agents",
+    "Large Language Models",
+    "Motivational Interviewing",
+    "Behavioural Counselling",
+    "MI Adherence Evaluation",
     "Digital Health",
-    "Controlled Generation",
-    "Prompt Engineering",
-    "Alignment",
+    "Smoking Cessation",
   ],
 };
 
@@ -52,8 +57,8 @@ export const education = [
     date: "Sep 2022 - Present",
     bullets: [
       "Supervised by Prof. Jonathan Rose.",
-      "Developing generative chatbots that incentivize patients to quit smoking in collaboration with CAMH.",
-      "Research topics include controlled generation, conversational systems, prompt engineering, alignment, and digital health.",
+      "Developing LLM-based systems and evaluation harnesses for motivational-interviewing-based behavioural counselling in collaboration with CAMH.",
+      "Research topics include controlled generation, MI adherence evaluation, conversational systems, personalization, fairness, and digital health.",
     ],
   },
   {
@@ -78,7 +83,7 @@ export const experience = [
     type: "Clinical research exposure",
     bullets: [
       "Observe real-world motivational interviewing sessions for smoking cessation conducted by expert clinicians at the Nicotine Dependence Clinic.",
-      "Connect clinical counselling practice with the design and evaluation of motivational-interviewing chatbot interactions.",
+      "Connect clinical counselling practice with the design and evaluation of LLM-based motivational-interviewing systems.",
     ],
   },
   {
@@ -105,6 +110,20 @@ export const experience = [
       "Integrated computer vision and NLP models using C++ and Python, including MobileNet, RetinaFace, and BERT.",
       "Implemented inference layers from scratch in C++ for Geekbench's internal inference platform.",
       "Added model support across TensorFlow Lite, Core ML, Intel OpenVINO, and related frameworks.",
+      "Implemented custom post-processing and model evaluation.",
+    ],
+  },
+  {
+    organization: "North York General Hospital",
+    role: "Machine Learning Engineer, Surge Prediction",
+    date: "Sep 2019 - Jan 2020",
+    location: "Toronto, Canada",
+    type: "Co-op",
+    bullets: [
+      "Analyzed encoded historical patient-level data to predict emergency department readmission and surge patterns.",
+      "Performed data cleansing, aggregation, and labeling for patient inflow and outflow forecasting.",
+      "Implemented classical forecasting models and RNN-based time-series models, including LSTM and GRU variants.",
+      "Delivered surge prediction results with over 80% validation accuracy and customer approval.",
     ],
   },
   {
@@ -117,6 +136,18 @@ export const experience = [
       "Designed and tested workflow management solutions for file-generation procedures.",
       "Worked across requirements, analysis, design, estimation, and testing using Python, Perl, TCL, Bash, and GNU Make.",
       "Contributed to a low-code simulation platform for virtual ASIC workflows.",
+    ],
+  },
+  {
+    organization: "Connected Vehicles and Smart Transportation",
+    role: "Full Stack Developer Intern",
+    date: "May 2016 - Aug 2016",
+    location: "Greater Toronto Area, Canada",
+    type: "Internship",
+    bullets: [
+      "Worked with the CVST research team on cloud-based infrastructure for vehicle and transportation data.",
+      "Acquired and analyzed real-time data from multiple APIs for a customer-facing web product.",
+      "Processed data-entry requirements and implemented front-end queries and historical trend visualizations.",
     ],
   },
 ];
@@ -140,6 +171,19 @@ export const researchExperience = [
       "Modelled EfficientNet performance with respect to network depth, width, and image resolution.",
       "Adapted EfficientNet variants for datasets including Tiny ImageNet and CIFAR-100.",
       "Integrated modelling work with Extra-P performance-modelling software.",
+      "Automated tests for training reconfigured EfficientNet structures on new datasets.",
+    ],
+  },
+  {
+    organization:
+      "University of Toronto, Dynamic Optimization & Operations Management Lab",
+    role: "Research Assistant",
+    date: "May 2017 - Sep 2017",
+    bullets: [
+      "Worked under Prof. Chi-Ghun Lee on dynamic pricing for condominium units.",
+      "Formulated the pricing problem as a Markov Decision Process and built an interactive market environment in Python.",
+      "Implemented Deep Q-learning variants with TensorFlow and action-space heuristics.",
+      "Trained agents achieved 10% higher total revenue than historical sales.",
     ],
   },
 ];
@@ -257,15 +301,15 @@ export const skills = [
 
 export const researchHighlights = [
   {
-    title: "Generative MI chatbot research",
-    body: "Developing and evaluating fully generative counsellor chatbots that use motivational interviewing principles to help smokers move toward quitting.",
+    title: "LLM-based MI counselling systems",
+    body: "Building system scaffolding around LLMs for motivational-interviewing-based behavioural counselling, usually in smoking cessation.",
   },
   {
-    title: "Clinically grounded evaluation",
-    body: "Connecting LLM behaviour with clinical practices through collaboration with CAMH and observation of real motivational interviewing sessions.",
+    title: "MI adherence and evaluation",
+    body: "Adapting motivational interviewing coding and transcript analysis to measure whether generated counselling behaviour follows MI principles.",
   },
   {
-    title: "Controlled generation and alignment",
-    body: "Studying how language models can generate useful, context-sensitive responses while staying aligned with therapeutic communication goals.",
+    title: "Personalization, fairness, and deployment",
+    body: "Studying personalization and bias mitigation so LLM-based counselling tools can be evaluated responsibly with clinical collaborators.",
   },
 ];

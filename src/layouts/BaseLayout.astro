@@ -7,7 +7,7 @@ interface Props {
 }
 
 const {
-  title = "Jiading Zhu | PhD Student in ECE, University of Toronto",
+  title = "Jiading Zhu | PhD Candidate, University of Toronto ECE",
   description = profile.description,
 } = Astro.props;
 
@@ -39,9 +39,6 @@ const navItems = [
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Jiading Zhu home">
-          <span class="brand-text">Jiading Zhu</span>
-        </a>
         <nav class="nav" aria-label="Main navigation">
           {
             navItems.map((item) => (
@@ -145,21 +142,8 @@ const navItems = [
     display: flex;
     min-height: 72px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 24px;
-  }
-
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    color: var(--ink);
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .brand-text {
-    font-size: 1.02rem;
-    white-space: nowrap;
   }
 
   .nav {
@@ -301,6 +285,19 @@ const navItems = [
     font-size: 1.06rem;
     font-weight: 760;
     margin-bottom: 22px;
+  }
+
+  .title-lines {
+    color: var(--blue);
+    font-size: 1.02rem;
+    font-weight: 760;
+    line-height: 1.42;
+    margin-bottom: 22px;
+    max-width: 58ch;
+  }
+
+  .title-lines span {
+    display: block;
   }
 
   .hero-identity {

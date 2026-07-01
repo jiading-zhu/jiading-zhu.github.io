@@ -19,7 +19,9 @@ const selectedExperience = experience.slice(0, 3);
         <img class="portrait" src={profile.image} alt={profile.imageAlt} width="500" height="500" loading="eager" />
         <div>
           <h1>{profile.name}</h1>
-          <p class="hero-title-meta">{profile.shortTitle}</p>
+          <p class="title-lines">
+            {profile.titleLines.map((line) => <span>{line}</span>)}
+          </p>
         </div>
       </div>
       <p class="lede">{profile.summary}</p>
@@ -43,7 +45,7 @@ const selectedExperience = experience.slice(0, 3);
       <div class="section-header">
         <div>
           <p class="eyebrow">Research</p>
-          <h2>Generative AI for health conversations</h2>
+          <h2>LLM-based motivational interviewing systems</h2>
         </div>
         <a class="button" href="/research/">Read more</a>
       </div>
@@ -97,7 +99,7 @@ const selectedExperience = experience.slice(0, 3);
       <div class="section-header">
         <div>
           <p class="eyebrow">Experience</p>
-          <h2>Research and engineering background</h2>
+          <h2>Research, clinical, and engineering background</h2>
         </div>
         <a class="button" href="/cv/">Full CV</a>
       </div>

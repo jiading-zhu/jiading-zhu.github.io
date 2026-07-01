@@ -5,12 +5,12 @@ import { profile, researchHighlights } from "../../data/site";
 
 <BaseLayout
   title="Research | Jiading Zhu"
-  description="Research by Jiading Zhu on generative AI, conversational agents, motivational interviewing, smoking cessation, and digital health."
+  description="Research by Jiading Zhu on LLM-based motivational interviewing, behavioural counselling, smoking cessation, and digital health."
 >
   <section class="section">
     <div class="container">
       <p class="eyebrow">Research</p>
-      <h1>Generative AI for clinically grounded conversations</h1>
+      <h1>LLM harnesses for motivational interviewing</h1>
       <p class="lede">{profile.researchSummary}</p>
       <div class="button-row">
         <a class="button button-primary" href="https://www.eecg.utoronto.ca/~jayar/chatbot-for-smoking-cessation.html" rel="noreferrer" target="_blank">Project context</a>
@@ -39,26 +39,25 @@ import { profile, researchHighlights } from "../../data/site";
       <div class="grid two">
         <article>
           <p class="eyebrow">Motivational interviewing</p>
-          <h2>From chatbot responses to counselling quality</h2>
+          <h2>From generated responses to counselling behaviour</h2>
           <p>
-            The smoking-cessation chatbot work uses motivational interviewing as a structured communication style. This creates technical questions about how language models should generate reflections, handle ambiguity, and support users without drifting away from clinically meaningful interaction patterns.
+            My work treats motivational interviewing as a structured behavioural counselling style, not just a chatbot tone. The technical problem is to build the prompts, control logic, evaluation harnesses, and transcript-analysis tools around LLMs so their generated counselling behaviour can stay closer to MI principles.
           </p>
           <p class="text-muted">
-            The research program includes generative reflection generation, automated coding of counsellor and client behaviours, and evaluation of how people interact with AI counsellor systems.
+            The research program includes MI-style reflection generation, automated coding of counsellor and client behaviours, MI adherence evaluation, personalization, and studies of how people interact with these systems.
           </p>
         </article>
         <article>
           <p class="eyebrow">Digital health</p>
-          <h2>AI systems that meet real-world constraints</h2>
+          <h2>Smoking cessation as the main testbed</h2>
           <p>
-            The work connects language-model methods with collaboration across engineering, CAMH, and University of Toronto health researchers. Observing clinical motivational interviewing sessions helps ground system design in the realities of smoking-cessation counselling.
+            Smoking cessation is the primary application context for this work because motivational interviewing is a validated counselling approach but skilled counselling is difficult to scale. The goal is to make LLM-based behavioural counselling more controllable, measurable, and clinically grounded.
           </p>
           <p class="text-muted">
-            The broader goal is to make conversational agents more controllable, evaluable, and useful in sensitive domains where response quality matters.
+            The work is developed with health collaborators, including CAMH, and emphasizes responsible evaluation before deployment.
           </p>
         </article>
       </div>
     </div>
   </section>
 </BaseLayout>
-
