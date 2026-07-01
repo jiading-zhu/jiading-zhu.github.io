@@ -16,13 +16,16 @@ const selectedExperience = experience.slice(0, 3);
   <section class="container hero">
     <div class="hero-copy">
       <div class="hero-identity">
-        <img class="portrait" src={profile.image} alt={profile.imageAlt} width="1280" height="1280" loading="eager" />
+        <img class="portrait" src={profile.image} alt={profile.imageAlt} width="500" height="500" loading="eager" />
         <div>
           <h1>{profile.name}</h1>
           <p class="hero-title-meta">{profile.shortTitle}</p>
         </div>
       </div>
-      <p class="lede">{profile.summary}</p>
+      <p class="lede">
+        {profile.summary}
+        <a class="inline-learn-more" href={profile.researchProjectUrl} rel="noreferrer" target="_blank">Learn more</a>
+      </p>
       <ul class="tag-list" aria-label="Research interests">
         {profile.interests.map((interest) => <li class="tag">{interest}</li>)}
       </ul>
@@ -114,17 +117,6 @@ const selectedExperience = experience.slice(0, 3);
             </article>
           ))
         }
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">About</p>
-      <h2>Building useful AI systems for real settings</h2>
-      <p class="lede">{profile.about}</p>
-      <div class="button-row">
-        <a class="button button-primary" href={profile.researchProjectUrl} rel="noreferrer" target="_blank">Learn more about the research project</a>
       </div>
     </div>
   </section>
