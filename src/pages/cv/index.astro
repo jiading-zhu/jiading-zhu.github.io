@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  education,
+  experience,
+  profile,
+  researchExperience,
+  skills,
+} from "../../data/site";
+---
+
+<BaseLayout
+  title="CV | Jiading Zhu"
+  description="Web CV for Jiading Zhu, PhD student in Electrical and Computer Engineering at the University of Toronto."
+>
+  <section class="container cv-header">
+    <img class="avatar" src={profile.image} alt={profile.imageAlt} width="1280" height="1280" />
+    <div>
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>{profile.name}</h1>
+      <p class="lede">{profile.title}</p>
+      <ul class="profile-list" aria-label="Contact and profile links">
+        {
+          profile.links.slice(0, 3).map((link) => (
+            <li>
+              <a class="profile-link" href={link.href} rel="noreferrer" target={link.href.startsWith("http") ? "_blank" : undefined}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <p class="eyebrow">Education</p>
+      <div class="timeline">
+        {
+          education.map((item) => (
+            <article class="timeline-item">
+              <div class="timeline-date">{item.date}</div>
+              <div>
+                <h2>{item.degree}</h2>
+                <p class="card-meta">{item.institution} · {item.location}</p>
+                <ul class="clean-list">
+                  {item.bullets.map((bullet) => <li>{bullet}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Experience</p>
+      <div class="timeline">
+        {
+          experience.map((item) => (
+            <article class="timeline-item">
+              <div class="timeline-date">{item.date}</div>
+              <div>
+                <h2>{item.role}</h2>
+                <p class="card-meta">{item.organization} · {item.location} · {item.type}</p>
+                <ul class="clean-list">
+                  {item.bullets.map((bullet) => <li>{bullet}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <p class="eyebrow">Research experience</p>
+      <div class="timeline">
+        {
+          researchExperience.map((item) => (
+            <article class="timeline-item">
+              <div class="timeline-date">{item.date}</div>
+              <div>
+                <h2>{item.role}</h2>
+                <p class="card-meta">{item.organization}</p>
+                <ul class="clean-list">
+                  {item.bullets.map((bullet) => <li>{bullet}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Skills</p>
+      <div class="grid three">
+        {
+          skills.map((skillGroup) => (
+            <article class="card">
+              <h2>{skillGroup.group}</h2>
+              <ul class="tag-list">
+                {skillGroup.items.map((item) => <li class="tag">{item}</li>)}
+              </ul>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

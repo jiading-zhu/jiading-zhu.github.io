@@ -1,0 +1,134 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  experience,
+  profile,
+  publications,
+  researchHighlights,
+} from "../data/site";
+
+const featuredPublications = publications.filter((publication) => publication.featured);
+const selectedExperience = experience.slice(0, 3);
+---
+
+<BaseLayout>
+  <section class="container hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Academic website and resume</p>
+      <p class="hero-title-meta">{profile.shortTitle}</p>
+      <h1>{profile.name}</h1>
+      <p class="lede">{profile.summary}</p>
+      <ul class="tag-list" aria-label="Research interests">
+        {profile.interests.map((interest) => <li class="tag">{interest}</li>)}
+      </ul>
+      <div class="button-row">
+        <a class="button button-primary" href="/research/">Research</a>
+        <a class="button" href="/publications/">Publications</a>
+        <a class="button" href="/cv/">CV</a>
+      </div>
+      <ul class="profile-list" aria-label="Profile links">
+        {
+          profile.links.map((link) => (
+            <li>
+              <a class="profile-link" href={link.href} rel="noreferrer" target={link.href.startsWith("http") ? "_blank" : undefined}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="portrait-frame">
+      <img class="portrait" src={profile.image} alt={profile.imageAlt} width="1280" height="1280" loading="eager" />
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h2>Generative AI for health conversations</h2>
+        </div>
+        <a class="button" href="/research/">Read more</a>
+      </div>
+      <div class="grid three">
+        {
+          researchHighlights.map((highlight) => (
+            <article class="card">
+              <h3>{highlight.title}</h3>
+              <p class="text-muted">{highlight.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Selected publications</p>
+          <h2>Recent research output</h2>
+        </div>
+        <a class="button" href="/publications/">All publications</a>
+      </div>
+      <div class="grid three">
+        {
+          featuredPublications.map((publication) => (
+            <article class="card publication-card">
+              <div>
+                <p class="card-meta">{publication.venue} · {publication.year}</p>
+                <h3>
+                  <a class="publication-title" href={publication.href} rel="noreferrer" target="_blank">
+                    {publication.title}
+                  </a>
+                </h3>
+              </div>
+              <p class="publication-authors">{publication.authors}</p>
+              <div class="publication-footer">
+                {publication.tags.map((tag) => <span class="mini-tag">{tag}</span>)}
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Research and engineering background</h2>
+        </div>
+        <a class="button" href="/cv/">Full CV</a>
+      </div>
+      <div class="timeline">
+        {
+          selectedExperience.map((item) => (
+            <article class="timeline-item">
+              <div class="timeline-date">{item.date}</div>
+              <div>
+                <h3>{item.role}, {item.organization}</h3>
+                <p class="card-meta">{item.location} · {item.type}</p>
+                <p class="text-muted">{item.bullets[0]}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h2>Building useful AI systems for real settings</h2>
+      <p class="lede">{profile.about}</p>
+    </div>
+  </section>
+</BaseLayout>
+

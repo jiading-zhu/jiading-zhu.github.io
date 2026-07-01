@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { publications } from "../../data/site";
+---
+
+<BaseLayout
+  title="Publications | Jiading Zhu"
+  description="Selected publications by Jiading Zhu on generative AI, conversational agents, motivational interviewing, digital health, and LLMs."
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Publications</p>
+      <h1>Selected publications</h1>
+      <p class="lede">
+        A curated list of publications and preprints from my Google Scholar profile, focused on generative AI, conversational agents, motivational interviewing, digital health, and LLM systems.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en" rel="noreferrer" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="grid two">
+        {
+          publications.map((publication) => (
+            <article class="card publication-card">
+              <div>
+                <p class="card-meta">{publication.venue} · {publication.year}</p>
+                <h2>
+                  <a class="publication-title" href={publication.href} rel="noreferrer" target="_blank">
+                    {publication.title}
+                  </a>
+                </h2>
+              </div>
+              <p class="publication-authors">{publication.authors}</p>
+              <div class="publication-footer">
+                {publication.tags.map((tag) => <span class="mini-tag">{tag}</span>)}
+                {publication.citations && <span class="mini-tag">Cited by {publication.citations}</span>}
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
