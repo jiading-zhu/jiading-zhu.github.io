@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AuthorList from "../components/AuthorList.astro";
 import ProfileLink from "../components/ProfileLink.astro";
 import {
   experience,
@@ -83,7 +84,9 @@ const selectedExperience = experience.slice(0, 3);
                   </a>
                 </h3>
               </div>
-              <p class="publication-authors">{publication.authors}</p>
+              <p class="publication-authors">
+                <AuthorList authors={publication.authors} />
+              </p>
               <div class="publication-footer">
                 {publication.tags.map((tag) => <span class="mini-tag">{tag}</span>)}
               </div>
