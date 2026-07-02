@@ -12,7 +12,8 @@ const {
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
-const canonical = new URL(pathname, "https://jiading-zhu.github.io").toString();
+const siteUrl = "https://jiading-zhu.netlify.app";
+const canonical = new URL(pathname, siteUrl).toString();
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Research", href: "/research/" },
@@ -33,7 +34,7 @@ const navItems = [
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content="https://jiading-zhu.github.io/assets/jiading.jpg" />
+    <meta property="og:image" content={`${siteUrl}/assets/jiading.jpg`} />
     <meta name="twitter:card" content="summary_large_image" />
     <title>{title}</title>
   </head>

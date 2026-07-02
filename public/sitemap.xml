@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jiading-zhu.github.io/</loc>
+    <loc>https://jiading-zhu.netlify.app/</loc>
   </url>
   <url>
-    <loc>https://jiading-zhu.github.io/research/</loc>
+    <loc>https://jiading-zhu.netlify.app/research/</loc>
   </url>
   <url>
-    <loc>https://jiading-zhu.github.io/publications/</loc>
+    <loc>https://jiading-zhu.netlify.app/publications/</loc>
   </url>
   <url>
-    <loc>https://jiading-zhu.github.io/cv/</loc>
+    <loc>https://jiading-zhu.netlify.app/cv/</loc>
   </url>
 </urlset>

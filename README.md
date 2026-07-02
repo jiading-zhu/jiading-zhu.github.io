@@ -1,6 +1,6 @@
 # Jiading Zhu Personal Website
 
-Static academic personal website built with Astro and deployed to GitHub Pages.
+Static academic personal website built with Astro and deployed to Netlify.
 
 ## Development
 
@@ -18,13 +18,13 @@ npm run preview
 
 ## Deploy
 
-Create a public GitHub repository named `jiading-zhu.github.io`, then push this repository:
+Push this repository to the Git remote connected to Netlify:
 
 ```sh
 git push -u origin main
 ```
 
-In the GitHub repository settings, set Pages to deploy with GitHub Actions. The workflow in `.github/workflows/deploy.yml` builds Astro and publishes `dist/`.
+Netlify should run `npm run build` and publish the `dist/` directory.
 
 ## Privacy Notes
 
