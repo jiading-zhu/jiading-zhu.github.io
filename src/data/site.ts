@@ -15,7 +15,7 @@ export const profile = {
   image: "/assets/jiading.jpg",
   imageAlt: "Portrait of Jiading Zhu",
   description:
-    "LLM harnesses for motivational-interviewing-based behavioral counselling and digital health research at the University of Toronto.",
+    "PhD candidate at University of Toronto, building LLM harnesses for motivational-interviewing-based behavioral counselling chatbots, usually under the context of smoking cessation.",
   summary:
     "I create harnesses around large language models for motivational-interviewing-based behavioral counselling, usually in the context of smoking cessation.",
   researchSummary:
