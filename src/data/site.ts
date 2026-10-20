@@ -210,15 +210,15 @@ export const publications = [
   },
   {
     title:
-      "What are They Thinking? Delineation, Probing and Tracking of Concepts in LLMs",
+      "What are They Thinking? Delineation, Probing, and Tracking of Concepts in LLMs",
     authors:
       "Mohamed Abdelwahab, Michelle Yu Collins, Sihan Chen, Yi Cheng Zhao, Zafarullah Mahmood, Jiading Zhu, Soliman Ali, and Jonathan Rose",
-    venue: "arXiv preprint arXiv:2605.28823",
+    venue: "Proceedings of the 6th Workshop on Trustworthy NLP (TrustNLP 2026), pages 121–179",
     summary:
       "Introduces a framework for delineating, probing, and tracking internal concepts in large language models, with the goal of making model reasoning more inspectable.",
     year: "2026",
     citations: "2",
-    href: "https://arxiv.org/abs/2605.28823",
+    href: "https://aclanthology.org/2026.trustnlp-main.9/",
     tags: ["LLMs", "Interpretability"],
     featured: false,
   },
