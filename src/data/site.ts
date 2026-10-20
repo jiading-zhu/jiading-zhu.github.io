@@ -217,7 +217,7 @@ export const publications = [
     summary:
       "Introduces a framework for delineating, probing, and tracking internal concepts in large language models, with the goal of making model reasoning more inspectable.",
     year: "2026",
-    citations: "",
+    citations: "2",
     href: "https://arxiv.org/abs/2605.28823",
     tags: ["LLMs", "Interpretability"],
     featured: false,
@@ -231,7 +231,7 @@ export const publications = [
     summary:
       "Presents an LLM-based motivational-interviewing counselling system for helping smokers move toward deciding to quit.",
     year: "2025",
-    citations: "14",
+    citations: "20",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
     tags: ["Motivational Interviewing", "Conversational Agents"],
     featured: true,
@@ -245,7 +245,7 @@ export const publications = [
     summary:
       "Studies how exposure to ChatGPT changed user expectations and interactions with a motivational-interviewing chatbot in a smoking-cessation setting.",
     year: "2025",
-    citations: "3",
+    citations: "7",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
     tags: ["Digital Health", "Evaluation"],
     featured: false,
@@ -259,7 +259,7 @@ export const publications = [
     summary:
       "Validates LLM-based coding methods for counsellor and client behaviors in motivational-interviewing transcripts, supporting scalable MI evaluation.",
     year: "2025",
-    citations: "2",
+    citations: "6",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
     tags: ["NLP", "Digital Health"],
     featured: false,
@@ -272,7 +272,7 @@ export const publications = [
     summary:
       "Uses retrieval-augmented generation to support repository-level program verification with LLMs.",
     year: "2025",
-    citations: "5",
+    citations: "13",
     href: "https://arxiv.org/abs/2502.05344",
     tags: ["LLMs", "Program Verification"],
     featured: false,
