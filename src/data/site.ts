@@ -196,6 +196,20 @@ export const researchExperience = [
 export const publications = [
   {
     title:
+      "Evaluation of Motivational Interviewing Counsellors with Task-Aware Multi-Stage LLM-Based Simulated Clients",
+    authors:
+      "Jiading Zhu, Xinyu Cindy Wang, Thomas Nguyen, Yan Qing Lee, Osnat C. Melamed, Peter Selby, and Jonathan Rose",
+    venue: "arXiv preprint arXiv:2608.07499",
+    summary:
+      "Introduces Evoke-Sim, a task-aware, multi-stage simulated-client framework for evaluating motivational-interviewing counsellors in smoking cessation.",
+    year: "2026",
+    citations: "",
+    href: "https://arxiv.org/abs/2608.07499",
+    tags: ["Motivational Interviewing", "Evaluation"],
+    featured: true,
+  },
+  {
+    title:
       "What are They Thinking? Delineation, Probing and Tracking of Concepts in LLMs",
     authors:
       "Mohamed Abdelwahab, Michelle Yu Collins, Sihan Chen, Yi Cheng Zhao, Zafarullah Mahmood, Jiading Zhu, Soliman Ali, and Jonathan Rose",
@@ -234,7 +248,7 @@ export const publications = [
     citations: "3",
     href: "https://scholar.google.ca/citations?user=FDl9F6UAAAAJ&hl=en",
     tags: ["Digital Health", "Evaluation"],
-    featured: true,
+    featured: false,
   },
   {
     title:
